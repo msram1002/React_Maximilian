@@ -28,7 +28,7 @@ function App() {
     setTab(selectedButton);
   }
   return (
-    <div>
+    <>
       <Header></Header>
       <main>
         <section id="core-concepts">
@@ -98,7 +98,7 @@ function App() {
             tabContent = (<div id='tab-content'>...</div>) */}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
