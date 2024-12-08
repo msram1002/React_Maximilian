@@ -16,7 +16,7 @@ export default function Examples() {
       {/* Content to be displayed as per above Tab Selection */}
       <Tabs
         tabButtonsContainer="menu"
-        // we can pass our own component
+        // If we need to pass our own component
         // tabButtonsContainer={Section}
         tabButtons={
           <>
