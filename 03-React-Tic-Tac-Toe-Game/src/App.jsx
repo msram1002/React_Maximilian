@@ -1,5 +1,6 @@
 import Player from "./components/Player";
 import Gameboard from "./components/Gameboard";
+import Gamelog from "./components/Gamelog";
 import { useState } from "react";
 function App() {
   // Lifting the state up
@@ -8,6 +9,7 @@ function App() {
 
   function handleSelectSquare() {
     setActivePlayer((currentActivePlayer) => currentActivePlayer === 'X' ? 'O' : 'X');
+    setGameTurns()
   }
   return (
     <main>
@@ -21,6 +23,7 @@ function App() {
         <Gameboard activePlayerSymbol={activePlayer} onSelectSquare={handleSelectSquare}/>
       </div>
       {/* Log Game Activity */}
+      <Gamelog />
     </main>
   )
 }
